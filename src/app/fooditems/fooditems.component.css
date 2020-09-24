@@ -1,0 +1,37 @@
+td {
+    height: 40px;
+    text-align: left;
+    vertical-align: bottom;
+  }
+  thead {
+      background-color: #f2f2f2;
+      height: 60px;
+    }
+  table{
+      table-layout: fixed;
+      border-collapse: collapse;
+    margin-left:auto;margin-right:auto;
+  }
+.form{
+    padding: 20px;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}  
+table, thead, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+  label, input {
+    display: block;
+}
+label{
+    font-weight: bold;
+    margin-right: 5px;
+}
+input {
+    margin-right: 20px;
+}
+.body{
+    background-color: azure;
+}

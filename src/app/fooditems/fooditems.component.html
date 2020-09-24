@@ -1,0 +1,25 @@
+<div class="body">
+    <div class="form"> 
+        <label for="value">Value: </label>
+        <input type="text" [(ngModel)]="searchValue" id="value" name="value" placeholder="Search here" size="30">
+        <label for="other">Other: </label>
+        <input type="text" [(ngModel)]="searchOther" id="other" name="other" placeholder="Search" size="30">
+    </div>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 150px;">Value</th>
+                <th style="width: 150px;">Display</th>
+                <th style="width: 150px;">Desc</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let i of Items | searchfilter: searchValue | searchfilter: searchOther ">
+                <td style="width:150px">{{ i.value }}</td>
+                <td style="width:150px">{{ i.display }}</td>
+                <td style="width:150px">{{ i.desc }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
