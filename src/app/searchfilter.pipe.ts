@@ -7,7 +7,7 @@ export class SearchfilterPipe implements PipeTransform {
 
   transform(value: any, searchTerm: any): unknown {
     return value.filter(function(search){
-      return search.value.toLowerCase().indexOf(searchTerm) > -1
+      return search.value.toLocaleLowerCase().indexOf(searchTerm) > -1
     });
   }
 }
